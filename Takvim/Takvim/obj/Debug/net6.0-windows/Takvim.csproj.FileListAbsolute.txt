@@ -1,0 +1,17 @@
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\bin\Debug\net6.0-windows\Takvim.exe
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\bin\Debug\net6.0-windows\Takvim.deps.json
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\bin\Debug\net6.0-windows\Takvim.runtimeconfig.json
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\bin\Debug\net6.0-windows\Takvim.dll
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\bin\Debug\net6.0-windows\Takvim.pdb
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.csproj.AssemblyReference.cache
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.Form1.resources
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.csproj.GenerateResource.cache
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.AssemblyInfoInputs.cache
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.AssemblyInfo.cs
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.csproj.CoreCompileInputs.cache
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.dll
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\refint\Takvim.dll
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.pdb
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.genruntimeconfig.cache
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\ref\Takvim.dll
