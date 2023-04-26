@@ -4,7 +4,7 @@ namespace Takvim
 {
     public partial class Form1 : Form
     {
-        SqlConnection connection = new SqlConnection("Data Source = Ozlem\\SQLEXPRESS; Initial Catalog = kullanici_bilgi; Integrated Security= TRUE");
+        public static SqlConnection connection = new SqlConnection("Data Source = Ozlem\\SQLEXPRESS; Initial Catalog = kullanici_bilgi; Integrated Security= TRUE");
         public Form1()
         {
             InitializeComponent();
@@ -78,6 +78,13 @@ namespace Takvim
                 MessageBox.Show("Giriþ baþarýsýz");
             }
             connection.Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Form2 form2 = new Form2();
+            form2.Show();
         }
     }
 }
