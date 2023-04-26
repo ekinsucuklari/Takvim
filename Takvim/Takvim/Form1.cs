@@ -1,7 +1,10 @@
+using System.Data.SqlClient;
+
 namespace Takvim
 {
     public partial class Form1 : Form
     {
+        SqlConnection connection = new SqlConnection("Data Source = Ozlem\\SQLEXPRESS; Initial Catalog = kullanici_bilgi; Integrated Security= TRUE");
         public Form1()
         {
             InitializeComponent();
@@ -43,6 +46,38 @@ namespace Takvim
                 textBox2.ForeColor = Color.Black;
                 textBox2.PasswordChar = Convert.ToChar(nothing);
             }
+        }
+        bool isHere;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string username=textBox1.Text;
+            string password=textBox2.Text;
+            
+            connection.Open();
+            SqlCommand cmd = new SqlCommand("Select *from Giris", connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                if (username == reader["username"].ToString().TrimEnd() && password == reader["password"].ToString().TrimEnd())
+                {
+                    isHere = true;
+                    break;
+                }
+                else
+                {
+                    isHere = false;
+                }
+            }
+            if(isHere)
+            {
+                MessageBox.Show("Giriþ yapýlýyor..");
+            }
+            else
+            {
+                MessageBox.Show("Giriþ baþarýsýz");
+            }
+            connection.Close();
         }
     }
 }

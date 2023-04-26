@@ -32,3 +32,10 @@ C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-wi
 C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.pdb
 C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.genruntimeconfig.cache
 C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\ref\Takvim.dll
+C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.csproj.CopyComplete
