@@ -28,67 +28,137 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            button1 = new Button();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
+            textBox6 = new TextBox();
+            textBox7 = new TextBox();
+            textBox8 = new TextBox();
+            SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(97, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 31);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Username";
-            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            textBox1.Location = new Point(116, 86);
+            textBox1.Margin = new Padding(2);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(126, 23);
+            textBox1.TabIndex = 0;
+            textBox1.Text = "Name";
+            textBox1.Enter += textBox1_Enter;
+            textBox1.Leave += textBox1_Leave;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(97, 96);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(178, 31);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Password";
-            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
-            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
+            textBox2.Location = new Point(116, 119);
+            textBox2.Margin = new Padding(2);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(126, 23);
+            textBox2.TabIndex = 1;
+            textBox2.Text = "Surname";
+            textBox2.Enter += textBox2_Enter;
+            textBox2.Leave += textBox2_Leave;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(97, 154);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(178, 31);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "Password Again";
-            this.textBox3.Enter += new System.EventHandler(this.textBox3_Enter);
-            this.textBox3.Leave += new System.EventHandler(this.textBox3_Leave);
+            textBox3.Location = new Point(116, 153);
+            textBox3.Margin = new Padding(2);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(126, 23);
+            textBox3.TabIndex = 2;
+            textBox3.Text = "Username";
+            textBox3.Enter += textBox3_Enter;
+            textBox3.Leave += textBox3_Leave;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(305, 232);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 34);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Kaydol";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(116, 406);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(78, 20);
+            button1.TabIndex = 3;
+            button1.Text = "Kaydol";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(116, 189);
+            textBox4.Margin = new Padding(2);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(126, 23);
+            textBox4.TabIndex = 4;
+            textBox4.Text = "Password";
+            textBox4.Enter += textBox4_Enter;
+            textBox4.Leave += textBox4_Leave;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(116, 225);
+            textBox5.Margin = new Padding(2);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(126, 23);
+            textBox5.TabIndex = 5;
+            textBox5.Text = "TCKN";
+            textBox5.Enter += textBox5_Enter;
+            textBox5.Leave += textBox5_Leave;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(116, 261);
+            textBox6.Margin = new Padding(2);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(126, 23);
+            textBox6.TabIndex = 6;
+            textBox6.Text = "Phone Number";
+            textBox6.Enter += textBox6_Enter;
+            textBox6.Leave += textBox6_Leave;
+            // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(116, 297);
+            textBox7.Margin = new Padding(2);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(126, 23);
+            textBox7.TabIndex = 7;
+            textBox7.Text = "E-Mail";
+            textBox7.Enter += textBox7_Enter;
+            textBox7.Leave += textBox7_Leave;
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(116, 334);
+            textBox8.Margin = new Padding(2);
+            textBox8.Multiline = true;
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(250, 58);
+            textBox8.TabIndex = 8;
+            textBox8.Text = "Adress";
+            textBox8.Enter += textBox8_Enter;
+            textBox8.Leave += textBox8_Leave;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 372);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form2";
-            this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(408, 454);
+            Controls.Add(textBox8);
+            Controls.Add(textBox7);
+            Controls.Add(textBox6);
+            Controls.Add(textBox5);
+            Controls.Add(textBox4);
+            Controls.Add(button1);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Margin = new Padding(2);
+            Name = "Form2";
+            Text = "Form2";
+            Load += Form2_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -97,5 +167,10 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private Button button1;
+        private TextBox textBox4;
+        private TextBox textBox5;
+        private TextBox textBox6;
+        private TextBox textBox7;
+        private TextBox textBox8;
     }
 }
