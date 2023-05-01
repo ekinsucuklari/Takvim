@@ -175,7 +175,7 @@ namespace Takvim
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
-            SqlCommand cmd = new SqlCommand("Insert into Giris (name,surname,username,password,tc_no,tel_no,e_mail,adres) values('" + textBox1.Text + " ' , ' " + textBox2.Text + " ' , ' " + textBox3.Text + " ', ' " + textBox4.Text + " ' ,  ' " + textBox5.Text + " ' ,  ' " + textBox6.Text + " ', '" + textBox7.Text + "', ' " + textBox8.Text + " ' )", connection);
+            SqlCommand cmd = new SqlCommand("Insert into Kayit (name,surname,username,password,tc_no,tel_no,e_mail,adres) values('"+textBox1.Text + "' , '"+textBox2.Text+"' , '"+textBox3.Text + "', '"+textBox4.Text + "' ,  '" + textBox5.Text + "' ,  '"+ textBox6.Text +"', '"+ textBox7.Text +"', '"+ textBox8.Text +"')", connection);
             cmd.ExecuteNonQuery();
             connection.Close();
             MessageBox.Show("Kaydınız başarıyla gerçekleştirildi!");

@@ -50,11 +50,11 @@ namespace Takvim
         bool isHere;
         private void button1_Click(object sender, EventArgs e)
         {
-            string username=textBox1.Text;
-            string password=textBox2.Text;
-            
+            string username = textBox1.Text;
+            string password = textBox2.Text;
+
             connection.Open();
-            SqlCommand cmd = new SqlCommand("Select *from Giris", connection);
+            SqlCommand cmd = new SqlCommand("Select username,password from Kayit", connection);
             SqlDataReader reader = cmd.ExecuteReader();
 
             while (reader.Read())
@@ -69,7 +69,7 @@ namespace Takvim
                     isHere = false;
                 }
             }
-            if(isHere)
+            if (isHere)
             {
                 MessageBox.Show("Giriþ yapýlýyor..");
             }

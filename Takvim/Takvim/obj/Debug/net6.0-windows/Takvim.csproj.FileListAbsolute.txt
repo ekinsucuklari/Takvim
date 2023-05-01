@@ -72,3 +72,4 @@ C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\bin\Debug\
 C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.Form2.resources
 C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.csproj.CopyComplete
+C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.Form2.resources

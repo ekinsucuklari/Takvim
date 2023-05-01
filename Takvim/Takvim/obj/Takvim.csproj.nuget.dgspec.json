@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karam\\OneDrive\\Belgeler\\GitHub\\C#Deneme\\Takvim\\Takvim\\Takvim\\Takvim.csproj": {}
+    "C:\\Users\\moonm\\OneDrive\\Belgeler\\GitHub\\Takvim\\Takvim\\Takvim\\Takvim.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karam\\OneDrive\\Belgeler\\GitHub\\C#Deneme\\Takvim\\Takvim\\Takvim\\Takvim.csproj": {
+    "C:\\Users\\moonm\\OneDrive\\Belgeler\\GitHub\\Takvim\\Takvim\\Takvim\\Takvim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karam\\OneDrive\\Belgeler\\GitHub\\C#Deneme\\Takvim\\Takvim\\Takvim\\Takvim.csproj",
+        "projectUniqueName": "C:\\Users\\moonm\\OneDrive\\Belgeler\\GitHub\\Takvim\\Takvim\\Takvim\\Takvim.csproj",
         "projectName": "Takvim",
-        "projectPath": "C:\\Users\\karam\\OneDrive\\Belgeler\\GitHub\\C#Deneme\\Takvim\\Takvim\\Takvim\\Takvim.csproj",
-        "packagesPath": "C:\\Users\\karam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karam\\OneDrive\\Belgeler\\GitHub\\C#Deneme\\Takvim\\Takvim\\Takvim\\obj\\",
+        "projectPath": "C:\\Users\\moonm\\OneDrive\\Belgeler\\GitHub\\Takvim\\Takvim\\Takvim\\Takvim.csproj",
+        "packagesPath": "C:\\Users\\moonm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\moonm\\OneDrive\\Belgeler\\GitHub\\Takvim\\Takvim\\Takvim\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\karam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\moonm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
