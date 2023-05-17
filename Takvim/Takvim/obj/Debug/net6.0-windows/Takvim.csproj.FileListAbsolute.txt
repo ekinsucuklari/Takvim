@@ -74,3 +74,5 @@ C:\Users\LENOVO\Documents\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\r
 C:\Users\LENOVO\Documents\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.pdb
 C:\Users\LENOVO\Documents\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.genruntimeconfig.cache
 C:\Users\LENOVO\Documents\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\ref\Takvim.dll
+C:\Users\LENOVO\Documents\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.UserControl1.resources
+C:\Users\LENOVO\Documents\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.UserControl2.resources

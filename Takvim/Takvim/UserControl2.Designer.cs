@@ -1,6 +1,6 @@
 ﻿namespace Takvim
 {
-    partial class UserControl1
+    partial class UserControl2
     {
         /// <summary> 
         ///Gerekli tasarımcı değişkeni.
@@ -28,25 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelday = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // labelday
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "g\r\n";
+            this.labelday.AutoSize = true;
+            this.labelday.Location = new System.Drawing.Point(3, 11);
+            this.labelday.Name = "labelday";
+            this.labelday.Size = new System.Drawing.Size(32, 25);
+            this.labelday.TabIndex = 0;
+            this.labelday.Text = "00";
             // 
-            // UserControl1
+            // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
-            this.Name = "UserControl1";
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Controls.Add(this.labelday);
+            this.Name = "UserControl2";
             this.Size = new System.Drawing.Size(162, 114);
+            this.Load += new System.EventHandler(this.UserControl2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -54,6 +56,6 @@
 
         #endregion
 
-        private Label label1;
+        private Label labelday;
     }
 }

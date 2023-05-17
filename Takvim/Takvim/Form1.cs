@@ -72,6 +72,9 @@ namespace Takvim
             if (isHere)
             {
                 MessageBox.Show("Giriþ yapýlýyor..");
+                this.Hide();
+                Form3 form3 = new Form3();
+                form3.Show();
             }
             else
             {
@@ -83,8 +86,13 @@ namespace Takvim
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Form2 form2 = new Form2();
-            form2.Show();
+            Form3 form3 = new Form3();
+            form3.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

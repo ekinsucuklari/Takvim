@@ -29,6 +29,18 @@ namespace Takvim
 
             int days=DateTime.DaysInMonth(now.Year, now.Month);
             int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d"));
+
+            for(int i = 1;i<daysoftheweek;i++)
+            {
+                UserControl1 ucblank = new UserControl1();
+                daycontainer.Controls.Add(ucblank);
+            }
+            for(int i=1;i<=days;i++)
+            {
+                UserControl2 ucdays = new UserControl2();
+                ucdays.days(i);
+                daycontainer.Controls.Add(ucdays);  
+            }
         }
     }
 }
