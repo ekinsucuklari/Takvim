@@ -28,137 +28,111 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            button1 = new Button();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            SuspendLayout();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(116, 86);
-            textBox1.Margin = new Padding(2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(126, 23);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "Name";
-            textBox1.Enter += textBox1_Enter;
-            textBox1.Leave += textBox1_Leave;
+            this.textBox1.Location = new System.Drawing.Point(166, 143);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(178, 31);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Name";
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(116, 119);
-            textBox2.Margin = new Padding(2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(126, 23);
-            textBox2.TabIndex = 1;
-            textBox2.Text = "Surname";
-            textBox2.Enter += textBox2_Enter;
-            textBox2.Leave += textBox2_Leave;
+            this.textBox2.Location = new System.Drawing.Point(166, 198);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(178, 31);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "Surname";
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(116, 153);
-            textBox3.Margin = new Padding(2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(126, 23);
-            textBox3.TabIndex = 2;
-            textBox3.Text = "Username";
-            textBox3.Enter += textBox3_Enter;
-            textBox3.Leave += textBox3_Leave;
+            this.textBox3.Location = new System.Drawing.Point(166, 255);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(178, 31);
+            this.textBox3.TabIndex = 2;
+            this.textBox3.Text = "Username";
             // 
             // button1
             // 
-            button1.Location = new Point(116, 406);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(78, 20);
-            button1.TabIndex = 3;
-            button1.Text = "Kaydol";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            this.button1.Location = new System.Drawing.Point(166, 677);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 33);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Kaydol";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(116, 189);
-            textBox4.Margin = new Padding(2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(126, 23);
-            textBox4.TabIndex = 4;
-            textBox4.Text = "Password";
-            textBox4.Enter += textBox4_Enter;
-            textBox4.Leave += textBox4_Leave;
+            this.textBox4.Location = new System.Drawing.Point(166, 315);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(178, 31);
+            this.textBox4.TabIndex = 4;
+            this.textBox4.Text = "Password";
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(116, 225);
-            textBox5.Margin = new Padding(2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(126, 23);
-            textBox5.TabIndex = 5;
-            textBox5.Text = "TCKN";
-            textBox5.Enter += textBox5_Enter;
-            textBox5.Leave += textBox5_Leave;
+            this.textBox5.Location = new System.Drawing.Point(166, 375);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(178, 31);
+            this.textBox5.TabIndex = 5;
+            this.textBox5.Text = "TCKN";
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(116, 261);
-            textBox6.Margin = new Padding(2);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(126, 23);
-            textBox6.TabIndex = 6;
-            textBox6.Text = "Phone Number";
-            textBox6.Enter += textBox6_Enter;
-            textBox6.Leave += textBox6_Leave;
+            this.textBox6.Location = new System.Drawing.Point(166, 435);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(178, 31);
+            this.textBox6.TabIndex = 6;
+            this.textBox6.Text = "Phone Number";
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(116, 297);
-            textBox7.Margin = new Padding(2);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(126, 23);
-            textBox7.TabIndex = 7;
-            textBox7.Text = "E-Mail";
-            textBox7.Enter += textBox7_Enter;
-            textBox7.Leave += textBox7_Leave;
+            this.textBox7.Location = new System.Drawing.Point(166, 495);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(178, 31);
+            this.textBox7.TabIndex = 7;
+            this.textBox7.Text = "E-Mail";
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(116, 334);
-            textBox8.Margin = new Padding(2);
-            textBox8.Multiline = true;
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(250, 58);
-            textBox8.TabIndex = 8;
-            textBox8.Text = "Adress";
-            textBox8.Enter += textBox8_Enter;
-            textBox8.Leave += textBox8_Leave;
+            this.textBox8.Location = new System.Drawing.Point(166, 557);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(355, 94);
+            this.textBox8.TabIndex = 8;
+            this.textBox8.Text = "Adress";
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(408, 454);
-            Controls.Add(textBox8);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(button1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Margin = new Padding(2);
-            Name = "Form2";
-            Text = "Form2";
-            Load += Form2_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(583, 757);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Name = "Form2";
+            this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load_1);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

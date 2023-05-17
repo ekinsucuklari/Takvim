@@ -180,5 +180,10 @@ namespace Takvim
             connection.Close();
             MessageBox.Show("Kaydınız başarıyla gerçekleştirildi!");
         }
+
+        private void Form2_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
