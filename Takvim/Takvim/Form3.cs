@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace Takvim
 {
     public partial class Form3 : Form
     {
+        int month, year;
         public Form3()
         {
             InitializeComponent();
@@ -25,21 +27,107 @@ namespace Takvim
         {
             DateTime now = DateTime.Now;
 
-            DateTime startofthemonth = new DateTime(now.Year, now.Month, 1);
+            month = now.Month;
+            year = now.Year;
 
-            int days=DateTime.DaysInMonth(now.Year, now.Month);
+            string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
+            LBLDATE.Text = monthName + "    " + year;
+
+            DateTime startofthemonth = new DateTime(year, month, 1);
+
+            int days = DateTime.DaysInMonth(year, month);
             int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d"));
 
-            for(int i = 1;i<daysoftheweek;i++)
+            if (daysoftheweek == 0)
+            {
+                daysoftheweek = 7;
+            }
+
+            for (int i = 1; i < daysoftheweek; i++)
             {
                 UserControl1 ucblank = new UserControl1();
                 daycontainer.Controls.Add(ucblank);
             }
-            for(int i=1;i<=days;i++)
+            for (int i = 1; i <= days; i++)
             {
                 UserControl2 ucdays = new UserControl2();
                 ucdays.days(i);
-                daycontainer.Controls.Add(ucdays);  
+                daycontainer.Controls.Add(ucdays);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            daycontainer.Controls.Clear();
+
+            if (month == 12)
+            {
+                year++;
+                month = 1;
+            }
+            else
+                month++;
+            
+            string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
+            LBLDATE.Text = monthName + "    " + year;
+
+            DateTime startofthemonth = new DateTime(year, month, 1);
+
+            int days = DateTime.DaysInMonth(year, month);
+            int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d"));
+
+            if (daysoftheweek == 0)
+            {
+                daysoftheweek = 7;
+            }
+
+            for (int i = 1; i < daysoftheweek; i++)
+            {
+                UserControl1 ucblank = new UserControl1();
+                daycontainer.Controls.Add(ucblank);
+            }
+            for (int i = 1; i <= days; i++)
+            {
+                UserControl2 ucdays = new UserControl2();
+                ucdays.days(i);
+                daycontainer.Controls.Add(ucdays);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            daycontainer.Controls.Clear();
+
+            if (month == 1)
+            {
+                year--;
+                month = 13;
+            }
+            
+            month--;
+            
+            string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
+            LBLDATE.Text = monthName + "    " + year;
+
+            DateTime startofthemonth = new DateTime(year, month , 1);
+
+            int days = DateTime.DaysInMonth(year, month);
+            int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d"));
+
+            if (daysoftheweek == 0)
+            {
+                daysoftheweek = 7;
+            }
+            for (int i = 1; i < daysoftheweek; i++)
+            {
+                UserControl1 ucblank = new UserControl1();
+                daycontainer.Controls.Add(ucblank);
+            }
+            for (int i = 1; i <= days; i++)
+            {
+                UserControl2 ucdays = new UserControl2();
+                ucdays.days(i);
+                daycontainer.Controls.Add(ucdays);
             }
         }
     }

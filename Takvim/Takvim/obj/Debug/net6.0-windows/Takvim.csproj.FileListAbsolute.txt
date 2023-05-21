@@ -76,3 +76,6 @@ C:\Users\LENOVO\Documents\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\T
 C:\Users\LENOVO\Documents\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\ref\Takvim.dll
 C:\Users\LENOVO\Documents\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.UserControl1.resources
 C:\Users\LENOVO\Documents\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.UserControl2.resources
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.Form3.resources
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.UserControl1.resources
+C:\Users\karam\OneDrive\Belgeler\GitHub\C#Deneme\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.UserControl2.resources
