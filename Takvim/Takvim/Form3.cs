@@ -14,13 +14,17 @@ namespace Takvim
     public partial class Form3 : Form
     {
         int month, year;
-        public Form3()
+        public static string user;
+        public static int static_month,static_year;
+        public Form3(string username)
         {
+            user = username;
             InitializeComponent();
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            label8.Text = user;
             displayDays();
         }
         private void displayDays()
@@ -29,6 +33,8 @@ namespace Takvim
 
             month = now.Month;
             year = now.Year;
+            static_month = month;
+            static_year = year;
 
             string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBLDATE.Text = monthName + "    " + year;
@@ -67,7 +73,10 @@ namespace Takvim
             }
             else
                 month++;
-            
+
+            static_month = month;
+            static_year = year;
+
             string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBLDATE.Text = monthName + "    " + year;
 
@@ -103,13 +112,16 @@ namespace Takvim
                 year--;
                 month = 13;
             }
-            
+
             month--;
-            
+
+            static_month = month;
+            static_year = year;
+
             string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBLDATE.Text = monthName + "    " + year;
 
-            DateTime startofthemonth = new DateTime(year, month , 1);
+            DateTime startofthemonth = new DateTime(year, month, 1);
 
             int days = DateTime.DaysInMonth(year, month);
             int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d"));
