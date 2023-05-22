@@ -25,12 +25,13 @@ namespace Takvim
         public void days(int numday)
         {
             labelday.Text = numday + "";
-            static_days = labelday.Text;
         }
 
         private void UserControl2_Click(object sender, EventArgs e)
         {
-            
+            static_days = labelday.Text;
+            Choose chs = new Choose();
+            chs.ShowDialog(); 
         }
     }
 }
