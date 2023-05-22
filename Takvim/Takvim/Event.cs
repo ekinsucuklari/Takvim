@@ -14,6 +14,8 @@ namespace Takvim
 {
     public partial class EventForm : Form
     {
+        public static string dateTxt;
+
         SqlConnection connection = Form1.connection;
         public EventForm()
         {
@@ -23,14 +25,12 @@ namespace Takvim
         private void Event_Load(object sender, EventArgs e)
         {
             textBoxDate.Text = UserControl2.static_days + "/" + Form3.static_month + "/" + Form3.static_year;
+            dateTxt = textBoxDate.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
-            //SqlCommand cmd = new SqlCommand("Select startTime,endTime,description,eventType,eventDate,username from Olaylar", connection);
-            //SqlDataReader reader = cmd.ExecuteReader();
-            //connection.Open();
             SqlCommand cmd = new SqlCommand("Insert into Olaylar (startTime,endTime,description,eventType,eventDate,username) values('" + textBoxStart.Text+ "' , '" + textBoxEnd.Text + "' , '" + textBoxDescp.Text + "', '" + textBoxEventType.Text + "' ,  '" + textBoxDate.Text + "' ,  '" + Form3.user + "')", connection);
             cmd.ExecuteNonQuery();
             connection.Close();

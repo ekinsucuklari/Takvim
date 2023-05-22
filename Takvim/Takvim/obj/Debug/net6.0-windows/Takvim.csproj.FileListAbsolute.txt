@@ -83,3 +83,4 @@ C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-wi
 C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.UserControl1.resources
 C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.UserControl2.resources
 C:\Users\moonm\OneDrive\Belgeler\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.EventForm.resources
+C:\Users\LENOVO\Documents\GitHub\Takvim\Takvim\Takvim\obj\Debug\net6.0-windows\Takvim.EventForm.resources
