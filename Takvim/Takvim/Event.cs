@@ -17,6 +17,7 @@ namespace Takvim
         public static string dateTxt;
 
         SqlConnection connection = Form1.connection;
+        SqlConnection connection1 = Form1.connection;
         public EventForm()
         {
             InitializeComponent();
@@ -33,7 +34,8 @@ namespace Takvim
         private void Event_Load(object sender, EventArgs e)
         {
             textBoxDate.Text = UserControl2.static_days + "/" + Form3.static_month + "/" + Form3.static_year;
-            dateTxt = textBoxDate.Text;
+            dateTxt = textBoxDate.Text;//ihtiyaç mı?
+            textBoxDate.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,6 +46,5 @@ namespace Takvim
             connection.Close();
             this.Hide();
         }
-        //button1_cliked güncelleme için overloading edilicek!!
     }
 }

@@ -47,9 +47,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             Controls.Add(labelday);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "UserControl2";
-            Size = new Size(194, 137);
+            Size = new Size(194, 136);
             Load += UserControl2_Load;
             Click += UserControl2_Click;
             ResumeLayout(false);

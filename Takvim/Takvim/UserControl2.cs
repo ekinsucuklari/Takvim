@@ -31,7 +31,7 @@ namespace Takvim
         {
             static_days = labelday.Text;
             Choose chs = new Choose();
-            chs.ShowDialog(); 
+            chs.ShowDialog();
         }
     }
 }

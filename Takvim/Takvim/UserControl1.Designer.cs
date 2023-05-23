@@ -34,20 +34,19 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(48, 28);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(82, 56);
             label1.Name = "label1";
-            label1.Size = new Size(0, 15);
+            label1.Size = new Size(0, 30);
             label1.TabIndex = 0;
             // 
             // UserControl1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(label1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(4);
             Name = "UserControl1";
-            Size = new Size(113, 68);
+            Size = new Size(194, 136);
             ResumeLayout(false);
             PerformLayout();
         }

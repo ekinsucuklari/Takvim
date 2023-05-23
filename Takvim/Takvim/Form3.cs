@@ -36,6 +36,8 @@ namespace Takvim
             static_month = month;
             static_year = year;
 
+            ChangeBackground(static_month);
+
             string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBLDATE.Text = monthName + "    " + year;
 
@@ -76,6 +78,7 @@ namespace Takvim
 
             static_month = month;
             static_year = year;
+            ChangeBackground(static_month);
 
             string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBLDATE.Text = monthName + "    " + year;
@@ -117,7 +120,7 @@ namespace Takvim
 
             static_month = month;
             static_year = year;
-
+            ChangeBackground(static_month);
             string monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBLDATE.Text = monthName + "    " + year;
 
@@ -142,5 +145,25 @@ namespace Takvim
                 daycontainer.Controls.Add(ucdays);
             }
         }
+        void ChangeBackground(int month)
+        {
+            if(month == 12 || month < 3)
+            {
+                this.BackColor = Color.Blue;
+            }
+            else if( month < 6 && month > 2)
+            {
+                this.BackColor = Color.Pink;
+            }
+            else if (month < 9 && month > 5)
+            {
+                this.BackColor = Color.Yellow;
+            }
+            else if (month < 12 && month > 8)
+            {
+                this.BackColor = Color.Orange;
+            }
+        }
+
     }
 }
