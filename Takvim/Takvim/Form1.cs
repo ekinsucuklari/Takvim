@@ -71,6 +71,7 @@ namespace Takvim
                     isHere = false;
                 }
             }
+            connection.Close();
             if (isHere)
             {
                 MessageBox.Show("Giriþ yapýlýyor..");
@@ -82,7 +83,7 @@ namespace Takvim
             {
                 MessageBox.Show("Giriþ baþarýsýz");
             }
-            connection.Close();
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

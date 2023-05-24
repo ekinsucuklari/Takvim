@@ -43,6 +43,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Transparent;
             Controls.Add(label1);
             Margin = new Padding(4);
             Name = "UserControl1";

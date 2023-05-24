@@ -44,6 +44,8 @@
             // 
             // daycontainer
             // 
+            daycontainer.BackColor = Color.Transparent;
+            daycontainer.ForeColor = SystemColors.ControlText;
             daycontainer.Location = new Point(27, 188);
             daycontainer.Margin = new Padding(3, 4, 3, 4);
             daycontainer.Name = "daycontainer";
@@ -75,6 +77,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(79, 158);
             label1.Name = "label1";
@@ -85,6 +88,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(286, 158);
             label2.Name = "label2";
@@ -95,6 +99,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(478, 158);
             label3.Name = "label3";
@@ -105,6 +110,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(691, 158);
             label4.Name = "label4";
@@ -115,6 +121,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label5.Location = new Point(897, 158);
             label5.Name = "label5";
@@ -125,6 +132,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
             label6.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label6.Location = new Point(1094, 158);
             label6.Name = "label6";
@@ -135,6 +143,7 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
             label7.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
             label7.Location = new Point(1299, 158);
             label7.Name = "label7";
@@ -144,8 +153,9 @@
             // 
             // LBLDATE
             // 
+            LBLDATE.BackColor = Color.Transparent;
             LBLDATE.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            LBLDATE.Location = new Point(478, 36);
+            LBLDATE.Location = new Point(478, 43);
             LBLDATE.Name = "LBLDATE";
             LBLDATE.Size = new Size(490, 72);
             LBLDATE.TabIndex = 10;
@@ -155,6 +165,7 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
             label8.Location = new Point(114, 57);
             label8.Name = "label8";
             label8.Size = new Size(0, 30);
@@ -164,6 +175,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SeaShell;
             ClientSize = new Size(1464, 1130);
             Controls.Add(label8);
             Controls.Add(LBLDATE);
