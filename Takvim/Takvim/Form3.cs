@@ -165,23 +165,27 @@ namespace Takvim
         {
             if (month == 12 || month < 3)
             {
-                this.BackColor = Color.Blue;
+                this.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\kış.png");
+                this.BackgroundImageLayout = ImageLayout.Stretch;
+                daycontainer.BackColor = Color.FromArgb(206, 216, 158);
             }
             else if (month < 6 && month > 2)
             {
                 this.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\ilkbahar.png");
-                daycontainer.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\ilkbahar.png");
-                //this.BackgroundImageLayout = ImageLayout.Stretch;
+                this.BackgroundImageLayout = ImageLayout.Stretch;
+                daycontainer.BackColor = Color.FromArgb(206, 216, 158);
             }
             else if (month < 9 && month > 5)
             {
                 this.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\yaz.png");
-                daycontainer.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\yaz.png");
-                // this.BackgroundImageLayout = ImageLayout.Stretch;
+                this.BackgroundImageLayout = ImageLayout.Stretch;
+                daycontainer.BackColor = Color.FromArgb(206, 216, 158);
             }
             else if (month < 12 && month > 8)
             {
-                this.BackColor = Color.Orange;
+                this.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\sonbahar.png");
+                this.BackgroundImageLayout = ImageLayout.Stretch;
+                daycontainer.BackColor = Color.FromArgb(206, 216, 158);
             }
 
         }
@@ -225,5 +229,6 @@ namespace Takvim
         {
             AlarmRing();
         }
+
     }
 }

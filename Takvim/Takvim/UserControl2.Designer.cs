@@ -34,10 +34,11 @@
             // labelday
             // 
             labelday.AutoSize = true;
+            labelday.Font = new Font("Lucida Sans Unicode", 9.857143F, FontStyle.Bold, GraphicsUnit.Point);
             labelday.Location = new Point(4, 13);
             labelday.Margin = new Padding(4, 0, 4, 0);
             labelday.Name = "labelday";
-            labelday.Size = new Size(35, 30);
+            labelday.Size = new Size(44, 28);
             labelday.TabIndex = 0;
             labelday.Text = "00";
             // 

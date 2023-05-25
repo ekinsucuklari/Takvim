@@ -45,11 +45,12 @@
             // daycontainer
             // 
             daycontainer.BackColor = Color.Transparent;
+            daycontainer.Font = new Font("Lucida Sans Unicode", 9F, FontStyle.Bold, GraphicsUnit.Point);
             daycontainer.ForeColor = SystemColors.ControlText;
             daycontainer.Location = new Point(27, 188);
             daycontainer.Margin = new Padding(3, 4, 3, 4);
             daycontainer.Name = "daycontainer";
-            daycontainer.Size = new Size(1414, 874);
+            daycontainer.Size = new Size(1575, 874);
             daycontainer.TabIndex = 0;
             // 
             // button1
@@ -78,10 +79,10 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(79, 158);
+            label1.Font = new Font("Lucida Sans Unicode", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(92, 159);
             label1.Name = "label1";
-            label1.Size = new Size(120, 30);
+            label1.Size = new Size(115, 25);
             label1.TabIndex = 3;
             label1.Text = "Pazartesi";
             // 
@@ -89,10 +90,10 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(286, 158);
+            label2.Font = new Font("Lucida Sans Unicode", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(331, 159);
             label2.Name = "label2";
-            label2.Size = new Size(56, 30);
+            label2.Size = new Size(51, 25);
             label2.TabIndex = 4;
             label2.Text = "Salı";
             // 
@@ -100,10 +101,10 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(478, 158);
+            label3.Font = new Font("Lucida Sans Unicode", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(478, 159);
             label3.Name = "label3";
-            label3.Size = new Size(132, 30);
+            label3.Size = new Size(124, 25);
             label3.TabIndex = 5;
             label3.Text = "Çarşamba";
             // 
@@ -111,10 +112,10 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(691, 158);
+            label4.Font = new Font("Lucida Sans Unicode", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(730, 159);
             label4.Name = "label4";
-            label4.Size = new Size(130, 30);
+            label4.Size = new Size(121, 25);
             label4.TabIndex = 6;
             label4.Text = "Perşembe";
             // 
@@ -122,10 +123,10 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(897, 158);
+            label5.Font = new Font("Lucida Sans Unicode", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(977, 159);
             label5.Name = "label5";
-            label5.Size = new Size(82, 30);
+            label5.Size = new Size(76, 25);
             label5.TabIndex = 7;
             label5.Text = "Cuma";
             // 
@@ -133,10 +134,10 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(1094, 158);
+            label6.Font = new Font("Lucida Sans Unicode", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(1168, 159);
             label6.Name = "label6";
-            label6.Size = new Size(131, 30);
+            label6.Size = new Size(127, 25);
             label6.TabIndex = 8;
             label6.Text = "Cumartesi";
             // 
@@ -144,18 +145,18 @@
             // 
             label7.AutoSize = true;
             label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(1299, 158);
+            label7.Font = new Font("Lucida Sans Unicode", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(1407, 159);
             label7.Name = "label7";
-            label7.Size = new Size(80, 30);
+            label7.Size = new Size(74, 25);
             label7.TabIndex = 9;
             label7.Text = "Pazar";
             // 
             // LBLDATE
             // 
             LBLDATE.BackColor = Color.Transparent;
-            LBLDATE.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            LBLDATE.Location = new Point(478, 43);
+            LBLDATE.Font = new Font("Lucida Sans Unicode", 20.1428585F, FontStyle.Bold, GraphicsUnit.Point);
+            LBLDATE.Location = new Point(550, 42);
             LBLDATE.Name = "LBLDATE";
             LBLDATE.Size = new Size(490, 72);
             LBLDATE.TabIndex = 10;
@@ -176,7 +177,7 @@
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SeaShell;
-            ClientSize = new Size(1464, 1130);
+            ClientSize = new Size(1608, 1224);
             Controls.Add(label8);
             Controls.Add(LBLDATE);
             Controls.Add(label7);
