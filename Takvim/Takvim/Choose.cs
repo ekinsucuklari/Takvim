@@ -43,6 +43,7 @@ namespace Takvim
                 radioButton.Text = isim;
                 radioButton.AutoSize = true;
                 radioButton.Location = new Point(101, y);
+                radioButton.BackColor = Color.Transparent;
                 this.Controls.Add(radioButton);
                 rbl.Add(radioButton);
                 syc++;

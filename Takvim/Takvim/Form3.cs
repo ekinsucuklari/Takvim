@@ -192,39 +192,41 @@ namespace Takvim
 
         void AlarmRing()
         {
-            DateTime currentTime = DateTime.Now;
-            string sqlCurrentDay = currentTime.Day.ToString() + "/" + currentTime.Month.ToString() + "/" + currentTime.Year.ToString();
-            string sqlCurrentHour = currentTime.Hour.ToString() + ":" + currentTime.Minute.ToString();
-
-            if (!connection.State.Equals(ConnectionState.Open))
-                connection.Open();
-            SqlCommand cmd = new SqlCommand("SELECT startTime FROM Olaylar WHERE username = '" + user + "' AND eventDate='" + sqlCurrentDay + "' AND startTime='" + sqlCurrentHour + "';", connection);
-            SqlDataReader reader = cmd.ExecuteReader();
-
-            if (reader.HasRows)
+            DateTime current = DateTime.Now;
+            string sqlCurrentTime = current.Hour.ToString("00") + ":" + current.Minute.ToString("00");
+            string sqlCurrentDate = current.Day.ToString()+"/"+current.Month.ToString()+"/"+current.Year.ToString();
+            string connstring = "Data Source = Ozlem\\SQLEXPRESS; Initial Catalog = kullanici_bilgi; Integrated Security= TRUE";
+            using (SqlConnection connection = new SqlConnection(connstring))
             {
-                reader.Read();
+                connection.Open();
 
-                string zaman = reader["startTime"].ToString();
-                if (!isAlarmPlaying)
+
+                string query = "SELECT * FROM Olaylar WHERE username='" + user + "';";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    SoundPlayer player = new SoundPlayer("C:\\Users\\moonm\\Downloads\\gitar.wav");
-                    player.PlayLooping();
-                    MessageBox.Show("Çalıştı alarm düt düt");
-                    isAlarmPlaying = true;
-                }
-                if (isAlarmPlaying)
-                {
-                    SoundPlayer player = new SoundPlayer();
-                    player.Stop();
-                    isAlarmPlaying = false;
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        string eventDate = (string)reader["eventDate"].ToString();
+                        string startDate = (string)reader["startTime"].ToString();
+                        
+                        if (eventDate == sqlCurrentDate && startDate == sqlCurrentTime)
+                        {
+                            SoundPlayer player = new SoundPlayer("C:\\Users\\moonm\\OneDrive\\Masaüstü\\gitar.wav");
+                            player.PlayLooping();
+                            MessageBox.Show("Bugün içerisinde bir etkinliğiniz var!");
+                            break;
+                        }
+                    }
+
+                    reader.Close();
                 }
 
+                connection.Close();
             }
-            reader.Close();
-            connection.Close();
         }
-
         private void Timer_Tick(object sender, EventArgs e)
         {
             AlarmRing();
