@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -42,7 +43,7 @@
             // textBox1
             // 
             textBox1.Location = new Point(199, 172);
-            textBox1.Margin = new Padding(4, 4, 4, 4);
+            textBox1.Margin = new Padding(4);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(213, 35);
             textBox1.TabIndex = 0;
@@ -53,7 +54,7 @@
             // textBox2
             // 
             textBox2.Location = new Point(199, 238);
-            textBox2.Margin = new Padding(4, 4, 4, 4);
+            textBox2.Margin = new Padding(4);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(213, 35);
             textBox2.TabIndex = 1;
@@ -64,7 +65,7 @@
             // textBox3
             // 
             textBox3.Location = new Point(199, 306);
-            textBox3.Margin = new Padding(4, 4, 4, 4);
+            textBox3.Margin = new Padding(4);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(213, 35);
             textBox3.TabIndex = 2;
@@ -74,19 +75,21 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.MistyRose;
+            button1.Font = new Font("Constantia", 9.857143F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(199, 812);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(133, 40);
             button1.TabIndex = 3;
             button1.Text = "Kaydol";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // textBox4
             // 
             textBox4.Location = new Point(199, 378);
-            textBox4.Margin = new Padding(4, 4, 4, 4);
+            textBox4.Margin = new Padding(4);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(213, 35);
             textBox4.TabIndex = 4;
@@ -97,7 +100,7 @@
             // textBox5
             // 
             textBox5.Location = new Point(199, 450);
-            textBox5.Margin = new Padding(4, 4, 4, 4);
+            textBox5.Margin = new Padding(4);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(213, 35);
             textBox5.TabIndex = 5;
@@ -108,7 +111,7 @@
             // textBox6
             // 
             textBox6.Location = new Point(199, 522);
-            textBox6.Margin = new Padding(4, 4, 4, 4);
+            textBox6.Margin = new Padding(4);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(213, 35);
             textBox6.TabIndex = 6;
@@ -119,7 +122,7 @@
             // textBox7
             // 
             textBox7.Location = new Point(199, 594);
-            textBox7.Margin = new Padding(4, 4, 4, 4);
+            textBox7.Margin = new Padding(4);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(213, 35);
             textBox7.TabIndex = 7;
@@ -130,7 +133,7 @@
             // textBox8
             // 
             textBox8.Location = new Point(199, 668);
-            textBox8.Margin = new Padding(4, 4, 4, 4);
+            textBox8.Margin = new Padding(4);
             textBox8.Multiline = true;
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(425, 112);
@@ -143,6 +146,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(700, 908);
             Controls.Add(textBox8);
             Controls.Add(textBox7);
@@ -153,9 +157,9 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Form2";
-            Text = "Form2";
+            Text = "Kayıt Ekranı";
             Load += Form2_Load_1;
             ResumeLayout(false);
             PerformLayout();

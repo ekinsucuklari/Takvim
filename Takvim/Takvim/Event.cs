@@ -26,7 +26,7 @@ namespace Takvim
         {
             InitializeComponent();
             textBoxStart.Text = srt;
-            textBoxEnd.Text=end;
+            textBoxEnd.Text = end;
             textBoxDescp.Text = desc;
             textBoxEventType.Text = evT;
             textBoxDate.Text = evD;

@@ -34,7 +34,7 @@ namespace Takvim
             if (textBox2.Text == "Password")
             {
                 textBox2.Text = "";
-                textBox2.ForeColor = Color.Red;
+                textBox2.ForeColor = Color.Silver;
                 textBox2.PasswordChar = '*';
             }
         }
@@ -83,7 +83,7 @@ namespace Takvim
             {
                 MessageBox.Show("Giriþ baþarýsýz");
             }
-            
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

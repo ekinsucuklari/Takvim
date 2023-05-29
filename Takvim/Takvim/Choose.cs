@@ -61,7 +61,7 @@ namespace Takvim
         private void button1_Click(object sender, EventArgs e)//yeni kayıt
         {
             EventForm eventForm = new EventForm();
-            eventForm.Show();
+            eventForm.ShowDialog();
             this.Hide();
         }
 
@@ -91,7 +91,7 @@ namespace Takvim
                         connection.Close();
 
                         EventForm eventForm = new EventForm(start, end, evntT, evntD, descrip);
-                        eventForm.Show();
+                        eventForm.ShowDialog();
 
                     }
                     connection.Close();

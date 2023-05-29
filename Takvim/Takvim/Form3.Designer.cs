@@ -193,7 +193,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form3";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form3";
+            Text = "Takvim";
             Load += Form3_Load;
             ResumeLayout(false);
             PerformLayout();

@@ -165,27 +165,27 @@ namespace Takvim
         {
             if (month == 12 || month < 3)
             {
-                this.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\kış.png");
+                this.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\Takvim\\kış.png");
                 this.BackgroundImageLayout = ImageLayout.Stretch;
-                daycontainer.BackColor = Color.FromArgb(206, 216, 158);
+               // daycontainer.BackColor = Color.FromArgb(206, 216, 158);
             }
             else if (month < 6 && month > 2)
             {
-                this.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\ilkbahar.png");
+                this.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\Takvim\\ilkbahar.png");
                 this.BackgroundImageLayout = ImageLayout.Stretch;
-                daycontainer.BackColor = Color.FromArgb(206, 216, 158);
+                //daycontainer.BackColor = Color.FromArgb(206, 216, 158);
             }
             else if (month < 9 && month > 5)
             {
-                this.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\yaz.png");
+                this.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\Takvim\\yaz.png");
                 this.BackgroundImageLayout = ImageLayout.Stretch;
-                daycontainer.BackColor = Color.FromArgb(206, 216, 158);
+                //daycontainer.BackColor = Color.FromArgb(206, 216, 158);
             }
             else if (month < 12 && month > 8)
             {
-                this.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\sonbahar.png");
+                this.BackgroundImage = Image.FromFile("C:\\Users\\moonm\\OneDrive\\Masaüstü\\Takvim\\sonbahar.png");
                 this.BackgroundImageLayout = ImageLayout.Stretch;
-                daycontainer.BackColor = Color.FromArgb(206, 216, 158);
+                //daycontainer.BackColor = Color.FromArgb(206, 216, 158);
             }
 
         }

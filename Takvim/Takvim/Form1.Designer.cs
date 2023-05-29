@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             button1 = new Button();
@@ -56,22 +57,27 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.MediumPurple;
+            button1.Font = new Font("Segoe UI Black", 11.1428576F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(329, 586);
-            button1.Margin = new Padding(5, 6, 5, 6);
+            button1.Margin = new Padding(0);
             button1.Name = "button1";
             button1.Size = new Size(130, 46);
             button1.TabIndex = 2;
             button1.Text = "Giriş";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(197, 488);
+            linkLabel1.BackColor = Color.Transparent;
+            linkLabel1.Font = new Font("Segoe UI Black", 14.1428576F, FontStyle.Bold, GraphicsUnit.Point);
+            linkLabel1.LinkColor = Color.MediumVioletRed;
+            linkLabel1.Location = new Point(197, 475);
             linkLabel1.Margin = new Padding(5, 0, 5, 0);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(81, 30);
+            linkLabel1.Size = new Size(145, 45);
             linkLabel1.TabIndex = 3;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Kayıt ol";
@@ -81,6 +87,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(634, 838);
             Controls.Add(linkLabel1);
             Controls.Add(button1);
@@ -88,7 +95,8 @@
             Controls.Add(textBox1);
             Margin = new Padding(5, 6, 5, 6);
             Name = "Form1";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Giriş Ekranı";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
