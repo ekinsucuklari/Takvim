@@ -24,12 +24,12 @@ namespace Takvim
         }
         public void days(int numday)
         {
-            labelday.Text = numday + "";
+            labelday.Text = numday + "";//günlerin sayıları
         }
 
         private void UserControl2_Click(object sender, EventArgs e)
         {
-            static_days = labelday.Text;
+            static_days = labelday.Text;// Tıklanılan gündeki sayı atanır
             Choose chs = new Choose();
             chs.ShowDialog();
         }

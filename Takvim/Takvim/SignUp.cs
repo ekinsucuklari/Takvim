@@ -26,76 +26,84 @@ namespace Takvim
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
+            //Kullanıcı kayıt için adını girer.
             if (textBox1.Text == "Name")
             {
                 textBox1.Text = "";
-                textBox1.ForeColor = Color.Red;
+                textBox1.ForeColor = Color.Black;
             }
         }
 
         private void textBox2_Enter(object sender, EventArgs e)
         {
+            //Kullanıcı kayıt için soyadını girer.
             if (textBox2.Text == "Surname")
             {
                 textBox2.Text = "";
-                textBox2.ForeColor = Color.Red;
+                textBox2.ForeColor = Color.Black;
 
             }
         }
 
         private void textBox3_Enter(object sender, EventArgs e)
         {
+            //Kullanıcı kayıt için kullanıcı adını girer.
             if (textBox3.Text == "Username")
             {
                 textBox3.Text = "";
-                textBox3.ForeColor = Color.Red;
+                textBox3.ForeColor = Color.Black;
 
             }
         }
 
         private void textBox4_Enter(object sender, EventArgs e)
         {
+            //Kullanıcı kayıt için şifresini girer.
             if (textBox4.Text == "Password")
             {
                 textBox4.Text = "";
-                textBox4.ForeColor = Color.Red;
+                textBox4.ForeColor = Color.Black;
                 textBox4.PasswordChar = '*';
             }
         }
 
         private void textBox5_Enter(object sender, EventArgs e)
         {
+            //Kullanıcı kayıt için TCKN'sini girer.
             if (textBox5.Text == "TCKN")
             {
                 textBox5.Text = "";
-                textBox5.ForeColor = Color.Red;
+                textBox5.ForeColor = Color.Black;
             }
         }
 
         private void textBox6_Enter(object sender, EventArgs e)
         {
+            //Kullanıcı kayıt için telefon numarasını girer.
             if (textBox6.Text == "Phone Number")
             {
                 textBox6.Text = "";
-                textBox6.ForeColor = Color.Red;
+                textBox6.ForeColor = Color.Black;
             }
         }
 
         private void textBox7_Enter(object sender, EventArgs e)
         {
+            //Kullanıcı kayıt için e-mail adresini girer.
             if (textBox7.Text == "E-Mail")
             {
                 textBox7.Text = "";
-                textBox7.ForeColor = Color.Red;
+                textBox7.ForeColor = Color.Black;
             }
         }
 
         private void textBox8_Enter(object sender, EventArgs e)
         {
+            //Kullanıcı kayıt için adresini girer.
             if (textBox8.Text == "Adress")
             {
                 textBox8.Text = "";
-                textBox8.ForeColor = Color.Red;
+                textBox8.ForeColor = Color.Black;
             }
         }
 
@@ -175,15 +183,11 @@ namespace Takvim
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
+            //Girilen değerler SQL bağlantısıyla veritabanına aktarılır. 
             SqlCommand cmd = new SqlCommand("Insert into Kayit (name,surname,username,password,tc_no,tel_no,e_mail,adres) values('" + textBox1.Text + "' , '" + textBox2.Text + "' , '" + textBox3.Text + "', '" + textBox4.Text + "' ,  '" + textBox5.Text + "' ,  '" + textBox6.Text + "', '" + textBox7.Text + "', '" + textBox8.Text + "')", connection);
             cmd.ExecuteNonQuery();
             connection.Close();
             MessageBox.Show("Kaydınız başarıyla gerçekleştirildi!");
-        }
-
-        private void Form2_Load_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

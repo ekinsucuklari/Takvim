@@ -160,7 +160,7 @@
             Margin = new Padding(4);
             Name = "SignUp";
             Text = "Kayıt Ekranı";
-            Load += Form2_Load_1;
+            Load += Form2_Load;
             ResumeLayout(false);
             PerformLayout();
         }

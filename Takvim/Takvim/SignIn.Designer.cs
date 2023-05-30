@@ -43,6 +43,8 @@
             textBox1.Size = new Size(258, 35);
             textBox1.TabIndex = 0;
             textBox1.Text = "Username";
+            textBox1.Enter += textBox1_Enter;
+            textBox1.Leave += textBox1_Leave;
             // 
             // textBox2
             // 
