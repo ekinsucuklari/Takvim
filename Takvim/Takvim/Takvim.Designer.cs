@@ -1,6 +1,6 @@
 ﻿namespace Takvim
 {
-    partial class Form3
+    partial class Takvim
     {
         /// <summary>
         /// Required designer variable.

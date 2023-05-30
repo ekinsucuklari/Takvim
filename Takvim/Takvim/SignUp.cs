@@ -11,10 +11,10 @@ using System.Data.SqlClient;
 
 namespace Takvim
 {
-    public partial class Form2 : Form
+    public partial class SignUp : Form
     {
-        SqlConnection connection = Form1.connection;
-        public Form2()
+        SqlConnection connection = SingIn.connection;
+        public SignUp()
         {
             InitializeComponent();
         }

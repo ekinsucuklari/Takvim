@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Takvim
 {
-    public partial class UserControl2 : UserControl
+    public partial class Days : UserControl
     {
         public static string static_days;
-        public UserControl2()
+        public Days()
         {
             InitializeComponent();
         }

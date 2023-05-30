@@ -7,19 +7,19 @@
     <Compile Update="Event.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form2.cs">
+    <Compile Update="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form3.cs">
+    <Compile Update="Takvim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UserControl1.cs">
+    <Compile Update="Empty.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControl2.cs">
+    <Compile Update="Days.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

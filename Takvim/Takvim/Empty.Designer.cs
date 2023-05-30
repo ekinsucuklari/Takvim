@@ -1,6 +1,6 @@
 ﻿namespace Takvim
 {
-    partial class UserControl1
+    partial class Empty
     {
         /// <summary> 
         ///Gerekli tasarımcı değişkeni.
@@ -39,14 +39,14 @@
             label1.Size = new Size(0, 30);
             label1.TabIndex = 0;
             // 
-            // UserControl1
+            // Empty
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
             Controls.Add(label1);
             Margin = new Padding(4);
-            Name = "UserControl1";
+            Name = "Empty";
             Size = new Size(194, 136);
             ResumeLayout(false);
             PerformLayout();

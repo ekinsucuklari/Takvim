@@ -16,8 +16,8 @@ namespace Takvim
     {
         public static string dateTxt;
 
-        SqlConnection connection = Form1.connection;
-        SqlConnection connection1 = Form1.connection;
+        SqlConnection connection = SingIn.connection;
+        SqlConnection connection1 = SingIn.connection;
         public EventForm()
         {
             InitializeComponent();
@@ -33,7 +33,7 @@ namespace Takvim
         }
         private void Event_Load(object sender, EventArgs e)
         {
-            textBoxDate.Text = UserControl2.static_days + "/" + Form3.static_month + "/" + Form3.static_year;
+            textBoxDate.Text = Days.static_days + "/" + Takvim.static_month + "/" + Takvim.static_year;
             dateTxt = textBoxDate.Text;//ihtiyaç mı?
             textBoxDate.Enabled = false;
         }
@@ -41,7 +41,7 @@ namespace Takvim
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
-            SqlCommand cmd = new SqlCommand("Insert into Olaylar (startTime,endTime,description,eventType,eventDate,username) values('" + textBoxStart.Text + "' , '" + textBoxEnd.Text + "' , '" + textBoxDescp.Text + "', '" + textBoxEventType.Text + "' ,  '" + textBoxDate.Text + "' ,  '" + Form3.user + "')", connection);
+            SqlCommand cmd = new SqlCommand("Insert into Olaylar (startTime,endTime,description,eventType,eventDate,username) values('" + textBoxStart.Text + "' , '" + textBoxEnd.Text + "' , '" + textBoxDescp.Text + "', '" + textBoxEventType.Text + "' ,  '" + textBoxDate.Text + "' ,  '" + Takvim.user + "')", connection);
             cmd.ExecuteNonQuery();
             connection.Close();
             this.Hide();

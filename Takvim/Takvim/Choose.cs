@@ -15,7 +15,7 @@ namespace Takvim
 {
     public partial class Choose : Form
     {
-        SqlConnection connection = Form1.connection;
+        SqlConnection connection = SingIn.connection;
         public Choose()
         {
             InitializeComponent();
@@ -24,8 +24,8 @@ namespace Takvim
         private void Choose_Load(object sender, EventArgs e)
         {
 
-            string user_Choose = Form3.user;
-            string date = UserControl2.static_days + "/" + Form3.static_month + "/" + Form3.static_year;
+            string user_Choose = Takvim.user;
+            string date = Days.static_days + "/" + Takvim.static_month + "/" + Takvim.static_year;
 
             connection.Open();
 

@@ -1,6 +1,6 @@
 ﻿namespace Takvim
 {
-    partial class Form1
+    partial class SingIn
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SingIn));
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             button1 = new Button();
@@ -83,7 +83,7 @@
             linkLabel1.Text = "Kayıt ol";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
-            // Form1
+            // SingIn
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -94,7 +94,7 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Margin = new Padding(5, 6, 5, 6);
-            Name = "Form1";
+            Name = "SingIn";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Giriş Ekranı";
             Load += Form1_Load;

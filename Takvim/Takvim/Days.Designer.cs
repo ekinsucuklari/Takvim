@@ -1,6 +1,6 @@
 ﻿namespace Takvim
 {
-    partial class UserControl2
+    partial class Days
     {
         /// <summary> 
         ///Gerekli tasarımcı değişkeni.
@@ -42,14 +42,14 @@
             labelday.TabIndex = 0;
             labelday.Text = "00";
             // 
-            // UserControl2
+            // Days
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             Controls.Add(labelday);
             Margin = new Padding(4);
-            Name = "UserControl2";
+            Name = "Days";
             Size = new Size(194, 136);
             Load += UserControl2_Load;
             Click += UserControl2_Click;

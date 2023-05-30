@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Takvim
 {
-    public partial class UserControl1 : UserControl
+    public partial class Empty : UserControl
     {
-        public UserControl1()
+        public Empty()
         {
             InitializeComponent();
         }

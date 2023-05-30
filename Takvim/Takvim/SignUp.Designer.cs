@@ -1,6 +1,6 @@
 ﻿namespace Takvim
 {
-    partial class Form2
+    partial class SignUp
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -142,7 +142,7 @@
             textBox8.Enter += textBox8_Enter;
             textBox8.Leave += textBox8_Leave;
             // 
-            // Form2
+            // SignUp
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -158,7 +158,7 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Margin = new Padding(4);
-            Name = "Form2";
+            Name = "SignUp";
             Text = "Kayıt Ekranı";
             Load += Form2_Load_1;
             ResumeLayout(false);

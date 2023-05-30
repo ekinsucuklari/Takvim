@@ -16,16 +16,16 @@ using System.Media;
 
 namespace Takvim
 {
-    public partial class Form3 : Form
+    public partial class Takvim : Form
     {
-        SqlConnection connection = Form1.connection;
+        SqlConnection connection = SingIn.connection;
 
         private Timer timer;
         int month, year;
         public static string user;
         public static int static_month, static_year;
         bool isAlarmPlaying = false;
-        public Form3(string username)
+        public Takvim(string username)
         {
             user = username;
             InitializeComponent();
@@ -66,12 +66,12 @@ namespace Takvim
 
             for (int i = 1; i < daysoftheweek; i++)
             {
-                UserControl1 ucblank = new UserControl1();
+                Empty ucblank = new Empty();
                 daycontainer.Controls.Add(ucblank);
             }
             for (int i = 1; i <= days; i++)
             {
-                UserControl2 ucdays = new UserControl2();
+                Days ucdays = new Days();
                 ucdays.days(i);
                 daycontainer.Controls.Add(ucdays);
             }
@@ -109,12 +109,12 @@ namespace Takvim
 
             for (int i = 1; i < daysoftheweek; i++)
             {
-                UserControl1 ucblank = new UserControl1();
+                Empty ucblank = new Empty();
                 daycontainer.Controls.Add(ucblank);
             }
             for (int i = 1; i <= days; i++)
             {
-                UserControl2 ucdays = new UserControl2();
+                Days ucdays = new Days();
                 ucdays.days(i);
                 daycontainer.Controls.Add(ucdays);
             }
@@ -150,12 +150,12 @@ namespace Takvim
             }
             for (int i = 1; i < daysoftheweek; i++)
             {
-                UserControl1 ucblank = new UserControl1();
+                Empty ucblank = new Empty();
                 daycontainer.Controls.Add(ucblank);
             }
             for (int i = 1; i <= days; i++)
             {
-                UserControl2 ucdays = new UserControl2();
+                Days ucdays = new Days();
                 ucdays.days(i);
                 daycontainer.Controls.Add(ucdays);
             }
@@ -194,7 +194,7 @@ namespace Takvim
         {
             DateTime current = DateTime.Now;
             string sqlCurrentTime = current.Hour.ToString("00") + ":" + current.Minute.ToString("00");
-            string sqlCurrentDate = current.Day.ToString()+"/"+current.Month.ToString()+"/"+current.Year.ToString();
+            string sqlCurrentDate = current.Day.ToString() + "/" + current.Month.ToString() + "/" + current.Year.ToString();
             string connstring = "Data Source = Ozlem\\SQLEXPRESS; Initial Catalog = kullanici_bilgi; Integrated Security= TRUE";
             using (SqlConnection connection = new SqlConnection(connstring))
             {
@@ -211,20 +211,21 @@ namespace Takvim
                     {
                         string eventDate = (string)reader["eventDate"].ToString();
                         string startDate = (string)reader["startTime"].ToString();
-                        
+
                         if (eventDate == sqlCurrentDate && startDate == sqlCurrentTime)
                         {
-                            isAlarmPlaying=true;
+                            isAlarmPlaying = true;
                             SoundPlayer player = new SoundPlayer("C:\\Users\\moonm\\OneDrive\\Masaüstü\\gitar.wav");
                             player.PlayLooping();
                             MessageBox.Show("Bugün içerisinde bir etkinliğiniz var!");
-                            
-                            if (isAlarmPlaying==true) {
+
+                            if (isAlarmPlaying == true)
+                            {
                                 player.Stop();
-                             }
+                            }
                             break;
                         }
-                        
+
                     }
 
                     reader.Close();
