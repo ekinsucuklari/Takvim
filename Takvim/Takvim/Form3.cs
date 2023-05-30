@@ -214,11 +214,17 @@ namespace Takvim
                         
                         if (eventDate == sqlCurrentDate && startDate == sqlCurrentTime)
                         {
+                            isAlarmPlaying=true;
                             SoundPlayer player = new SoundPlayer("C:\\Users\\moonm\\OneDrive\\Masaüstü\\gitar.wav");
                             player.PlayLooping();
                             MessageBox.Show("Bugün içerisinde bir etkinliğiniz var!");
+                            
+                            if (isAlarmPlaying==true) {
+                                player.Stop();
+                             }
                             break;
                         }
+                        
                     }
 
                     reader.Close();
